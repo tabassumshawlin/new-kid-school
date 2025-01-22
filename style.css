@@ -283,6 +283,9 @@ button {
     width:175px!important;
  }
 @media screen and (max-width: 576px) {
+    *{
+        margin-left: 0px auto;
+    }
     nav {
         width: 520px;
         margin: 0 auto;
