@@ -78,13 +78,20 @@ button
 .violet{
     color: #8A2BE2;
 }
+.standard-curriculam {
+    background-image: url('./assets/bg.png');
+    background-size: cover;
+
+}
 .standard-curriculam > h1 {
     text-align: center;
     font-size: 40px;
     margin-top: 50px;
 }
 
-
+.logo-text{
+    display: none;
+}
 .curriculam-card{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -199,7 +206,7 @@ display: grid;
         align-items: center;
         justify-content: center;
        
-        border: .5px solid black;
+        border-bottom: 0.5px solid rgb(27, 22, 22);
     }
 
     .burger-menu{
