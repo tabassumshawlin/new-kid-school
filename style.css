@@ -1,61 +1,82 @@
-
-.section{
+.section {
     margin-bottom: 20px;
-    
+
 }
-nav{
-max-width: 1000vw;
-margin: 0 auto;
-   
-} 
-    .logo{
-        gap: 10px;
-    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 nav ul {
     display: flex;
-gap: 50px;
-
-
+    gap: 10px;
 }
-.buttonholder >button{
-    margin-left: 170px;
+
+nav .buttons img {
+    width: 50px;
 }
- .stories-card img{
+
+nav .buttons {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+.stories-card img {
     width: 100%;
 }
-.burger-menu{
+
+.burger-menu {
     display: none;
 }
-.logo > img {
-    width: 70px !important; 
-    height: 30px !important; 
-    object-fit: contain;
+
+
+
+.display-flex {
+    display: flex;
 }
 
-.display-flex{
-    display: flex;
-}
 nav img {
-    width:100%;
+    /* width: 100%; */
     margin-left: 10px;
-    
+
 }
-nav ul div  {
+
+nav ul div {
     display: flex;
-align-items: center;
+    align-items: center;
     list-style: none;
     gap: 70px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
-.navlist li{
+
+.navlist li {
     font-size: larger;
-    
+
 }
-.buttonholder{
-    display: flex;
-}
-button
-{
+
+button {
     background-color: #FEA301;
     border: none;
     color: white;
@@ -68,85 +89,97 @@ button
     margin: 4px 2px;
     cursor: pointer;
 }
-.banner{
+
+.banner {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
     font-size: xx-large;
 }
-.orange{
+
+.orange {
     color: #FEA301;
 }
-.skyblue{
+
+.skyblue {
     color: #00BFFF;
 }
-.violet{
+
+.violet {
     color: #8A2BE2;
 }
+
 .standard-curriculam {
     background-image: url('./assets/bg.png');
     background-size: cover;
 
 }
-.standard-curriculam > h1 {
+
+.standard-curriculam>h1 {
     text-align: center;
     font-size: 40px;
     margin-top: 50px;
 }
 
+.logo-text {
+    display: none;
+}
 
-.curriculam-card{
+.curriculam-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-  padding: 20px;
+    padding: 20px;
 }
-.c1,.c2,.c3 {
+
+.c1,
+.c2,
+.c3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
-   
+
     border-radius: 20px;
     padding: 20px;
-   
+
 }
-.c1{
+
+.c1 {
     background: linear-gradient(to bottom right, #DEF5FF, #FFFFFF);
 }
-.c2{
+
+.c2 {
     background: linear-gradient(to bottom right, #FFF4DC, #FFFFFF);
 }
-.c3{
+
+.c3 {
     background: linear-gradient(to bottom right, #F2E8FF, #FFFFFF);
 }
-.scroll{
-    
+
+.scroll {
+
     display: flex;
     align-items: center;
-  justify-content: center;
+    justify-content: center;
 
 }
+
 .scroll img {
-    width: 50px; 
-    height: auto; 
-    object-fit: contain; 
+    width: 50px;
+    height: auto;
+    object-fit: contain;
 }
-.stories {
-    background-image: url('../assets/bg.png'), linear-gradient(to top, #fea10156, white);
-    width: 100%;
-    background-size: cover;
-    text-align: center;
-    padding: 50px 0 20px 0;
-  }
-  
-  h1 {
-    font-size: 3rem;
-  }
-  
 
-.stories > h1 {
+.stories {
+    background: linear-gradient(to top left, #DEF5FF, #FFFFFF);
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    /* Add padding to ensure space for footer */
+}
+
+.stories>h1 {
     text-align: center;
     font-size: 40px;
     margin-top: 50px;
@@ -154,25 +187,30 @@ button
 }
 
 .stories-card {
-display: grid;
+    display: grid;
     gap: 20px;
     margin: 20px;
-    grid-template-columns: repeat(2,1fr);
-    
+    grid-template-columns: repeat(2, 1fr);
+
 }
-.stories >button{
-   margin-left: 600px;
+
+.stories>button {
+    margin-left: 600px;
     background-color: black;
 }
-.s1, .s2-container div {
+.s1 p{
+    color: #666666;
+}
+.s1,
+.s2-container div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    background-color: #FFFFFF;
-    height: auto;  
-    padding: 20px;  
     border-radius: 20px;
+    background-color: #FFFFFF;
+    height: auto;
+    padding: 20px;
     box-sizing: border-box;
 }
 
@@ -181,131 +219,161 @@ display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     border-radius: 20px;
-   
+
 }
+.s1 img ,.s2 img ,.s4 img ,.s3 img ,.s5 img {
+    border-radius: 20px;
+}
+
 .btn-container {
     display: flex;
     justify-content: center;
 }
+
 .footer {
     margin-top: 60px;
-    padding-top: 20px;  
+    padding-top: 20px;
     clear: both;
 }
-.footer-container{
-  padding: 40px 70px 40px 70px;
-  display: grid;
-  
-  grid-template-columns: repeat(3,1fr);
-  background-color: #01ACFD;
+
+.footer-container {
+    padding: 40px 70px 40px 70px;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #01ACFD;
 }
-.footer-logo{
+
+.footer-logo {
     display: flex;
     gap: 10px;
-    
+
 }
-.about ul li{
+
+.about ul li {
     list-style-type: none;
     text-decoration: none;
 }
+.about h1,.footer-logo h1,.keepintouch h1{
+   
+    margin-bottom: 20px;
+ }
+ .about,.footer-logo,
+ .about >p{
+    margin-top: 10px;
+ }
+ .about{
+    color: #FFFFFF;
+ }
+ .footer-container div div{
+    color:white;
+ }
+ .keepintouch{
+    color: white;
+ }
+ .date{
+    margin-top: -40px;
+   padding: 5px 5px;
+   width:175px!important;
+ }
+ .date1{
+    background-color: chartreuse;
+    margin-top: -40px;
+    padding: 5px 5px;
+    width:175px!important;
+ }
 @media screen and (max-width: 576px) {
-    .banner-text{
+    nav {
+        width: 520px;
+        margin: 0 auto;
+
+    }
+
+    .banner-text {
         text-align: center;
     }
+
     .navbar {
-        display: flex;
-       flex-direction: column;
-        align-items: center;
-        justify-content: center;
-       
-        border-bottom: 0.5px solid rgb(27, 22, 22);
-    }
-    .logo-text{
-        display: none;
-    }
-    .burger-menu{
-        display: inline-flex;
-        align-items: center;
-            width: 100%;
-        height: 500px;
-        width: 
-    100px;
-    align-items: center;
-    }
-   
-    .logotext ,.navlist{
-       display: none;
-    }
-    nav img{
-        padding: 0px 0px 0px 0px !important;
-        margin: 0px 0px 0px 0px !important;
-    }
-    .logo li img {
-         
-        object-fit: contain;
-        padding: 0px 0px 0px 0px !important;
-        margin: 0px 0px 0px 0px !important;
-    }
-    .navbar ul {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 0px 0px 0px 0px !important;
-        margin: 0px 0px 0px 0px !important;
 
+        border-bottom: 0.5px solid rgb(27, 22, 22);
     }
-    nav ul div button{
+
+    .burger-menu {
+        display: inline;
+        align-items: center;
+        width: 100%;
+        height: 500px;
+        width:
+            100px;
+        align-items: center;
+    }
+
+    .logotext,
+    .navlist {
         display: none;
-        
     }
-    
-    .banner {
-       flex-direction: column-reverse;
+
+    .logo>img {
+        width: 70px !important;
+        height: 30px !important;
+        object-fit: contain;
+    }
+
+    nav ul div button {
+        display: none;
 
     }
-   
-    .curriculam-card{
+
+    .banner {
+        flex-direction: column-reverse;
+
+    }
+
+    .curriculam-card {
         grid-template-columns: repeat(1, 1fr);
     }
-    .scroll{
+
+    .scroll {
         display: none;
     }
-    
-.footer-container{
-    grid-template-columns: repeat(1,1fr);
-}
 
-  .stories{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-  }
-    .stories >button{
-        background-color: black;
-       margin-right: 500px;
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .stories-card{
+
+    .stories {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .stories>button {
+        background-color: black;
+        margin-right: 500px;
+    }
+
+    .stories-card {
         display: block;
     }
-    .s1{
+
+    .s1 {
         display: none;
     }
-    .footer-container{
+
+    .footer-container {
+        gap: 20px;
         align-items: start;
     }
-    .navbar{
-        padding: 0px 0px 0px 0px !important;
-        margin: 0px 0px 0px 0px !important;
+.logo h2,.buttons button{
+    display: none;
+}
+    .navbar {
+        margin: 0px;
     }
-    .boro-container{
-        padding: 0px 0px 0px 0px !important;
-        margin: 0px 0px 0px 0px !important;
-    }
-    .logo{
-        padding: 0px 0px 0px 0px !important;
-        margin: 0px 0px 0px 0px !important;
-    }
-    
+
 }
