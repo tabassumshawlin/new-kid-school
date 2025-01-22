@@ -89,7 +89,9 @@ button {
     margin: 4px 2px;
     cursor: pointer;
 }
-
+.buttons img{
+    display: none;
+}
 .banner {
     display: flex;
     justify-content: center;
@@ -222,7 +224,8 @@ button {
 
 }
 .s1 img ,.s2 img ,.s4 img ,.s3 img ,.s5 img {
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .btn-container {
@@ -283,9 +286,6 @@ button {
     width:175px!important;
  }
 @media screen and (max-width: 576px) {
-    *{
-        margin-left: 0px auto;
-    }
     nav {
         width: 520px;
         margin: 0 auto;
@@ -329,6 +329,9 @@ button {
     nav ul div button {
         display: none;
 
+    }
+    .buttons img{
+        display: inline;
     }
 
     .banner {
