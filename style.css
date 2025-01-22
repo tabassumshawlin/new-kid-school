@@ -183,7 +183,7 @@ display: grid;
     }
     .burger-menu{
         display: block;
-        
+        align-items: center;
             width: 100%;
         height: 500px;
         width: 
